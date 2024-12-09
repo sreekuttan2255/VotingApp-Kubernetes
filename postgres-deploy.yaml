@@ -1,4 +1,4 @@
-apiversion: apps/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
     name: postgres
@@ -13,8 +13,7 @@ spec:
           app: voting-app
   template:
       metadata:
-          name: postgres-pod
-          
+          name: postgres-pod  
       spec:
           containers:
           - name: postgres
